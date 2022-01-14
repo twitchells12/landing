@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import gir from '../assests/gir.png';
-import logo from '../assests/st_logo.png';
 
 function LandingScreen() {
   const [isMouseInside, setIsMouseInside] = useState(false);
@@ -31,9 +29,8 @@ function LandingScreen() {
       <div
         onMouseEnter={mouseLeft}
         onMouseLeave={() => setIsMouseInside(false) & setIsLeft(false)}
-        className="left"
+        className="split left"
       >
-        <img src={gir} className="limg" />
         <h1>Employees</h1>
         <a href="#" className="btn">
           Login
@@ -42,9 +39,8 @@ function LandingScreen() {
       <div
         onMouseEnter={mouseRight}
         onMouseLeave={() => setIsMouseInside(false) & setIsRight(false)}
-        className="right"
+        className="split right"
       >
-        <img src={logo} className="limg" />
         <h1>Customers</h1>
         <a href="#" className="btn">
           Login
